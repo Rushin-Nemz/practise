@@ -1,0 +1,324 @@
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* this is global declararation */
+
+
+
+/* /********************************************headers section***************************** */
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.h1 .h2 .h3 .h3 .h4 .h5 .h6 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    font-size: medium;
+    font-stretch: normal;
+    margin: 0;
+}
+/* .reflect {
+    -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+
+ } */
+
+.header .headermenu {
+    margin-left: auto;
+}
+
+.header .menubutton {
+    display: none;
+}
+
+.headermenu li a {
+    padding-left: 10px;
+    font-weight: 700;
+}
+
+.headermenu li a:hover {
+    color: lightgray;
+}
+
+.header h2:hover {
+    color: red;
+}
+
+.header span:hover {
+    color: black;
+}
+
+.spann {
+    color: red;
+}
+
+
+/* ******************************************introduction section****************** */
+.intro {
+    text-align: center;
+    /* padding: 10px 0; */
+    margin: 10px 0;
+}
+.bformat{
+    margin: 10px 0;
+}
+.cont{
+   margin-bottom: 50px;
+}
+
+.pformat {
+    font-size: 15px;
+    font-weight: lighter;
+    font-size: 15px;
+    text-align: center;
+}
+.hformat{
+    font-weight: bold;
+    font-size: 17px;
+}
+.headformat{
+    font-weight: bold;
+    font-size: 30px;
+}
+.intro h1 {
+    text-align: center;
+
+}
+
+.intro button {
+    background-color: black;
+    color: white;
+    padding: 3px 20px;
+    border-radius: 5px;
+}
+
+.intro button:hover {
+    color: white;
+    padding: auto;
+    opacity: 0.7;
+    box-shadow: 2px 2px 2px 2px rgba(66, 61, 61, 0.2);
+}
+
+.projectcard {
+    width: 30%;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.projectcard:hover {
+    box-shadow: 5px 5px 5px 5px rgba(250, 156, 156, 0.2);
+    
+}
+
+.projectcard img {
+    width: 100%;
+    height: auto;
+}
+
+.projectflex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.projectcard h4,
+p {
+    text-align: center;
+}
+
+/* *************************************Aboutme section************************** */
+.mainsection {
+    background-color: lightgray;
+    /* margin: 20px 0px; */
+    padding: 30px 0;
+}
+
+.icons {
+    border: 3px solid black;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.icons:hover {
+    border: 3px solid red;
+    box-shadow: rgba(248, 58, 58, 0.2);
+}
+
+.section2 {
+    display: flex;
+}
+
+.aboutme {
+    flex: 50%;
+    margin-right: 30px;
+}
+
+.aboutme p {
+    text-align: justify;
+    font-size: 15px;
+}
+
+/* ***************************************whats new section********************* */
+.new {
+    flex: 50%;
+}
+
+.imagedetails {
+    display: flex;
+}
+
+.imagedetails p {
+    text-align: justify;
+
+
+}
+
+.newimage {
+    width: 45%;
+    margin-right: 20px;
+    height: auto;
+    min-width: 250px;
+    
+
+}
+
+.newimage:hover {
+    box-shadow: 5px 5px 5px 5px rgba(245, 155, 155, 0.7);
+    /* scale: 1.1; */
+    border: 20px;
+}
+
+/* **************************************footer***************************** */
+.footer {
+    display: flex;
+    align-items: center;
+    /* padding: 10px 0; */
+    /* margin-bottom: 20px; */
+}
+
+.footer .footermenu {
+    margin-left: auto;
+}
+
+.footermenu li a {
+    padding-left: 10px;
+    font-weight: 700;
+    color: red;
+
+}
+
+.footermenu li a:hover {
+    color: gray;
+    scale: 1.1;
+
+}
+
+/* *********************************Responsive in progress****************** */
+@media (min-width: 1200px) {}
+
+@media (max-width: 1199px) {}
+
+@media (max-width: 991px) {}
+
+@media (max-width: 769px) {
+    .webtitle {
+        font-size: 28px;
+    }
+
+    .section2 {
+        display: block;
+    }
+
+    .imagedetails p {
+        text-align: left;
+
+    }
+
+    .footermenu {
+        display: none;
+    }
+}
+
+
+@media (max-width: 625px) {
+    .projectflex {
+        display: block;
+    }
+
+    .projectcard {
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .carddesc {
+        /* font-size: 12px; */
+        margin-bottom: 10px;
+    }
+
+
+
+}
+
+@media (max-width: 575px) {
+    .headermenu {
+        display: none;
+    }
+
+    .header .menubutton {
+        margin-left: auto;
+        display: block;
+    }
+
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .imagedetails {
+        display: block;
+    }
+
+    @media (max-width: 426px) {
+        *{
+            text-align: center;
+        }
+        .pformat {
+            text-align: center;
+        }
+        .aboutme p {
+            text-align: center;
+            font-size: 15px;
+        }
+        .aboutme{
+            text-align: center;
+        }
+        .new p{
+            text-align: center;
+            padding: 0 15px;
+        }
+        .section2 .aboutme{
+            margin-right: 0;
+        }
+    }
+}
